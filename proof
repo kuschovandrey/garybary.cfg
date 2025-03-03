@@ -1,0 +1,8 @@
+if err != nil {
+		return fmt.Errorf("failed to validate account: %w", err)
+	}
+	for i, storageProof := range proof.StorageProof {
+		err = VerifyStorageProof(proof.StorageHash, storageProof)
+		if err != nil {
+			return fmt.Errorf("failed to validate storage proof %d: %w", i, err)
+		}
