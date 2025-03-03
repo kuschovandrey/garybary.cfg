@@ -1,1 +1,3 @@
 Nonce           *big.Int
+return ProveWithdrawalParametersForBlock(ctx, proofCl, l2ReceiptCl, txHash, l2Header, l2OutputIndex)
+}
