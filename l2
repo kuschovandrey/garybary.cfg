@@ -1,0 +1,3 @@
+OutputRootProof bindings.TypesOutputRootProof
+	WithdrawalProof [][]byte // List of trie nodes to prove L2 storage
+}
