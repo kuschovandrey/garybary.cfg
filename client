@@ -2,5 +2,4 @@
 Name:    "poll-interval",
 		Usage:   "How frequently to poll L2 for new blocks (legacy L2OO)",
 		Value:   12 * time.Second,
-		EnvVars: prefixEnvVars("POLL_INTERVAL"),
-	}
+		EnvVars: prefixEnvVars("POLL_INTERVAL")
