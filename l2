@@ -1,3 +1,8 @@
 OutputRootProof bindings.TypesOutputRootProof
 	WithdrawalProof [][]byte // List of trie nodes to prove L2 storage
 }
+Name:    "poll-interval",
+		Usage:   "How frequently to poll L2 for new blocks (legacy L2OO)",
+		Value:   12 * time.Second,
+		EnvVars: prefixEnvVars("POLL_INTERVAL"),
+	}
