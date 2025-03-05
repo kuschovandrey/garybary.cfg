@@ -1,0 +1,3 @@
+test-actions: pre-test
+	$(go_test) $(go_test_flags) ./actions/...
+.PHONY: test-actions
