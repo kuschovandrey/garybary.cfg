@@ -6,3 +6,8 @@ if err != nil {
 		if err != nil {
 			return fmt.Errorf("failed to validate storage proof %d: %w", i, err)
 		}
+Name:    "poll-interval",
+		Usage:   "How frequently to poll L2 for new blocks (legacy L2OO)",
+		Value:   12 * time.Second,
+		EnvVars: prefixEnvVars("POLL_INTERVAL"),
+	}
